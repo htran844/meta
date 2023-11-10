@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Intro() {
     window.addEventListener('resize', checkResize);
-    const [urlback, setUrl] = useState("url(https://scontent.fhan14-1.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX9FkYYL&_nc_ht=scontent.fhan14-1.fna&oh=00_AfA5liA0PvTZmB9oH7GkBWZMlzbJw8N1069ocAynDBZmCw&oe=655133C0)")
+    const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
     const [sizeimg, setimg] = useState(86)
     function checkResize() {
         console.log("rezre", window.screen.width)
