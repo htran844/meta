@@ -3,14 +3,16 @@ import "aos/dist/aos.css"
 import React, { useEffect, useState } from 'react'
 
 export default function Intro() {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     window.addEventListener('resize', checkResize);
     const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D")
     const [sizeimg, setimg] = useState(86)
     function checkResize() {
-        if (window.screen.width >= 1024) {
+        console.log("intro", window.innerWidth)
+        if (window.innerWidth >= 1024) {
             setimg(86)
             setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
-        } else if (window.screen.width >= 768) {
+        } else if (window.innerWidth >= 768) {
             setimg(49)
             setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC8c83bfPdhZuA6qMksQwsV1r4oLHUEe7eOnDmGeSFvxg&oe=65517A62)")
         } else {
@@ -19,10 +21,10 @@ export default function Intro() {
         }
     }
     useEffect(()=>{
-        if (window.screen.width >= 1024) {
+        if (window.innerWidth >= 1024) {
             setimg(86)
             setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
-        } else if (window.screen.width >= 768) {
+        } else if (window.innerWidth >= 768) {
             setimg(49)
             setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCwdm7KPyxoda6yKrgystyTrC-KCY0pbjfMCs6ZE9O5mg&oe=655374A2)")
         } else {

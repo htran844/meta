@@ -1,18 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function GetStarted() {
     window.addEventListener('resize', checkResize);
     const [mobile, setMobile] = useState(1)
     function checkResize() {
-        if (window.screen.width <= 480) {
+        // console.log("startted", window.innerWidth)
+        if (window.innerWidth <= 480) {
             setMobile(1)
-        } else if (window.screen.width <= 1024) {
+        } else if (window.innerWidth <= 1024) {
             setMobile(2)
         }
         else {
             setMobile(3)
         }
     }
+    useEffect(()=>{
+        if (window.innerWidth <= 480) {
+            setMobile(1)
+        } else if (window.innerWidth <= 1024) {
+            setMobile(2)
+        }
+        else {
+            setMobile(3)
+        }
+    },[])
     return (
         <div className="_a5x4">
             <div className="_a5gf _a5gp _a5i9 _a5jm" />
