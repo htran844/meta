@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function GetStarted() {
+    window.addEventListener('resize', checkResize);
+    const [mobile, setMobile] = useState(1)
+    function checkResize() {
+        if (window.screen.width <= 480) {
+            setMobile(1)
+        } else if (window.screen.width <= 1024) {
+            setMobile(2)
+        }
+        else {
+            setMobile(3)
+        }
+    }
     return (
         <div className="_a5x4">
             <div className="_a5gf _a5gp _a5i9 _a5jm" />
@@ -67,184 +79,423 @@ export default function GetStarted() {
                 <div className="_a727">
                     <span />
                 </div>
-                <div
-                    aria-label="Slideshow"
-                    aria-roledescription="carousel"
-                    className="_90lg"
-                    role="group"
-                >
-                    <div className="_a728">
-                        <div
-                            aria-live="off"
-                            className="_90lh"
-                            id="js_j7"
-                            style={{ minHeight: 600, height: "666.531px" }}
-                        >
-                            <div
-                                aria-live="assertive"
-                                aria-roledescription="slide"
-                                className="_90lj"
-                                id="js_j8"
-                                role="presentation"
-                                tabIndex={0}
-                                style={{
-                                    width: "33.3333%",
-                                    transform: "translateX(0%)",
-                                    transition:
-                                        "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
-                                    opacity: 1,
-                                    visibility: "inherit"
-                                }}
-                            >
-                                <div className="_8h4d">
-                                    <span className="_1-qs _8h4d">
-                                        <div className="_a99r _9iv-">
-                                            <div className="_a6h7">
-                                                <div
-                                                    className="_a5n5 _al42 _al8o _am_h _am_j"
-                                                    style={{ borderRadius: 24 }}
-                                                >
-                                                    <div className="_8h4z _8h4- _a4zf">
-                                                        <img
-                                                            className="_8h4i _21op _8h4d _8h56 img"
-                                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
-                                                            alt="Verification on different platforms"
-                                                            id="u_0_2w_u3"
-                                                            style={{
-                                                                boxSizing: "border-box",
-                                                                backgroundImage:
-                                                                    "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
-                                                            }}
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="_a6h8" style={{}}>
-                                                <p className="_a92o _am_c _a5w7 _a5ct">Select a profile</p>
-                                                <p className="_a92o _am_d _a5w7 _a5ct">
-                                                    Go to ‘Settings’ on Instagram or Facebook. Click ‘Accounts
-                                                    Center’, then ‘Meta Verified’. If it’s available for your
-                                                    account, you will see<b> ‘</b>Meta Verified available’
-                                                    under your name and profile photo.
-                                                </p>
-                                                <div className="_a6h9" />
-                                                <div className="_afa_" />
-                                            </div>
+                {mobile == 1 &&
+                    <div className="_aodq">
+                        <div className="_aodp">
+                            <div className="_a99r _9iv-">
+                                <div className="_a6h7">
+                                    <div
+                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                        style={{ borderRadius: 24 }}
+                                    >
+                                        <div className="_8h4z _8h4- _a4zf">
+                                            <img
+                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                alt="Verification on different platforms"
+                                                id="u_0_2z_kk"
+                                                style={{
+                                                    boxSizing: "border-box",
+                                                    backgroundImage:
+                                                        "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
+                                                }}
+                                            />
                                         </div>
-                                    </span>
+                                    </div>
+                                </div>
+                                <div className="_a6h8" style={{}}>
+                                    <p className="_a92o _am_c _a5w7 _a5ct">Select a profile</p>
+                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                        Go to ‘Settings’ on Instagram or Facebook. Click ‘Accounts Center’,
+                                        then ‘Meta Verified’. If it’s available for your account, you will see
+                                        <b> ‘</b>Meta Verified available’ under your name and profile photo.
+                                    </p>
+                                    <div className="_a6h9" />
+                                    <div className="_afa_" />
                                 </div>
                             </div>
-                            <div
-                                aria-label="2 of 3"
-                                aria-live="off"
-                                aria-roledescription="slide"
-                                className="_90lj"
-                                id="js_j9"
-                                role="group"
-                                tabIndex={-1}
-                                style={{
-                                    width: "33.3333%",
-                                    transform: "translateX(100%)",
-                                    transition:
-                                        "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
-                                    opacity: 1,
-                                    visibility: "inherit"
-                                }}
-                            >
-                                <div className="_8h4d">
-                                    <span className="_1-qs _8h4d">
-                                        <div className="_a99r _9iv-">
-                                            <div className="_a6h7">
-                                                <div
-                                                    className="_a5n5 _al42 _al8o _am_h _am_j"
-                                                    style={{ borderRadius: 24 }}
-                                                >
-                                                    <div className="_8h4z _8h4- _a4zf">
-                                                        <img
-                                                            className="_8h4i _21op _8h4d _8h56 img"
-                                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
-                                                            alt="Payment Page"
-                                                            id="u_0_2x_30"
-                                                            style={{
-                                                                boxSizing: "border-box",
-                                                                backgroundImage:
-                                                                    'url("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/332887709_725686929102405_2876644259290443286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=JalXlu26XusAX-t52ol&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDounpANYq86HHZerD2vQVKZENWNuU_ptE6ZDKTiOc5cg&oe=6551B5CE")'
-                                                            }}
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="_a6h8" style={{}}>
-                                                <p className="_a92o _am_c _a5w7 _a5ct">Set up payment</p>
-                                                <p className="_a92o _am_d _a5w7 _a5ct">
-                                                    Select your preferred payment method for your monthly
-                                                    payment.
-                                                </p>
-                                                <div className="_a6h9" />
-                                                <div className="_afa_" />
-                                            </div>
+                        </div>
+                        <div className="_aodp">
+                            <div className="_a99r _9iv-">
+                                <div className="_a6h7">
+                                    <div
+                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                        style={{ borderRadius: 24 }}
+                                    >
+                                        <div className="_8h4z _8h4- _a4zf">
+                                            <img
+                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                alt="Payment Page"
+                                                id="u_0_2x_mJ"
+                                                style={{
+                                                    boxSizing: "border-box",
+                                                    backgroundImage:
+                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/332703085_873785203923711_9121059145098090429_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Q0DMYenUQAMAX8Uc1Qx&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA9HtAsuBz_XW_aQKDwHwhCpKD-Lynlr0U43hPR9WnEFg&oe=6551EE01")'
+                                                }}
+                                            />
                                         </div>
-                                    </span>
+                                    </div>
+                                </div>
+                                <div className="_a6h8" style={{}}>
+                                    <p className="_a92o _am_c _a5w7 _a5ct">Set up payment</p>
+                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                        Select your preferred payment method for your monthly payment.
+                                    </p>
+                                    <div className="_a6h9" />
+                                    <div className="_afa_" />
                                 </div>
                             </div>
-                            <div
-                                aria-label="3 of 3"
-                                aria-live="off"
-                                aria-roledescription="slide"
-                                className="_90lj"
-                                id="js_ja"
-                                role="group"
-                                tabIndex={-1}
-                                style={{
-                                    width: "33.3333%",
-                                    transform: "translateX(200%)",
-                                    transition:
-                                        "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
-                                    opacity: 1,
-                                    visibility: "inherit"
-                                }}
-                            >
-                                <div className="_8h4d">
-                                    <span className="_1-qs _8h4d">
-                                        <div className="_a99r _9iv-">
-                                            <div className="_a6h7">
-                                                <div
-                                                    className="_a5n5 _al42 _al8o _am_h _am_j"
-                                                    style={{ borderRadius: 24 }}
-                                                >
-                                                    <div className="_8h4z _8h4- _a4zf">
-                                                        <img
-                                                            className="_8h4i _21op _8h4d _8h56 img"
-                                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
-                                                            alt="Proof of ID"
-                                                            id="u_0_2y_Mb"
-                                                            style={{
-                                                                boxSizing: "border-box",
-                                                                backgroundImage:
-                                                                    'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/331495872_1427882078031584_21963010847847052_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=4g8QhkIcTnEAX9r1r4S&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDRD8cMpB_UWGAjUJnpJdZvnSwA6sj7hJprzap1L14MmQ&oe=6551B98F")'
-                                                            }}
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="_a6h8" style={{}}>
-                                                <p className="_a92o _am_c _a5w7 _a5ct">Verify identity</p>
-                                                <p className="_a92o _am_d _a5w7 _a5ct">
-                                                    Complete the verification process that requires a
-                                                    government ID and, in select regions, a selfie video to
-                                                    confirm your identity before being approved for a Meta
-                                                    Verified subscription.
-                                                </p>
-                                                <div className="_a6h9" />
-                                                <div className="_afa_" />
-                                            </div>
+                        </div>
+                        <div className="_aodp">
+                            <div className="_a99r _9iv-">
+                                <div className="_a6h7">
+                                    <div
+                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                        style={{ borderRadius: 24 }}
+                                    >
+                                        <div className="_8h4z _8h4- _a4zf">
+                                            <img
+                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                alt="Proof of ID"
+                                                id="u_0_2y_Ja"
+                                                style={{
+                                                    boxSizing: "border-box",
+                                                    backgroundImage:
+                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/331514961_3667225920166187_1767461297123902599_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X07UPLEdts8AX9urdp8&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA8oCb2LSi6PVXCxQmxGDXs4k7AXf_jXRXaewfR4CP2gw&oe=6552918C")'
+                                                }}
+                                            />
                                         </div>
-                                    </span>
+                                    </div>
+                                </div>
+                                <div className="_a6h8" style={{}}>
+                                    <p className="_a92o _am_c _a5w7 _a5ct">Verify identity</p>
+                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                        Complete the verification process that requires a government ID and,
+                                        in select regions, a selfie video to confirm your identity before
+                                        being approved for a Meta Verified subscription.
+                                    </p>
+                                    <div className="_a6h9" />
+                                    <div className="_afa_" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
+
+
+                {mobile == 2 &&
+                    <div
+                        aria-label="Slideshow"
+                        aria-roledescription="carousel"
+                        className="_90lg"
+                        role="group"
+                    >
+                        <div className="_a72h _a9sh">
+                            <p>
+                                <span />
+                            </p>
+                            <p className="_a729 _a5c-" style={{ color: "inherit" }}>
+                                1 / 3
+                            </p>
+                        </div>
+                        <div className="_a72a _al8m">
+                            <div
+                                aria-live="off"
+                                className="_90lh"
+                                id="js_1x8"
+                                style={{ minHeight: 620, height: "593.375px" }}
+                            >
+                                <div className="_a72g _8h4d _a9sg">
+                                    <div className="_a99r _9iv-">
+                                        <div className="_a6h7">
+                                            <div
+                                                className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                style={{ borderRadius: 24 }}
+                                            >
+                                                <div className="_8h4z _8h4- _a4zf">
+                                                    <img
+                                                        className="_8h4i _21op _8h4d _8h56 img"
+                                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                        alt="Verification on different platforms"
+                                                        id="u_0_2z_kk"
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            backgroundImage:
+                                                                "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="_a6h8" style={{}}>
+                                            <p className="_a92o _am_c _a5w7 _a5ct">Select a profile</p>
+                                            <p className="_a92o _am_d _a5w7 _a5ct">
+                                                Go to ‘Settings’ on Instagram or Facebook. Click ‘Accounts
+                                                Center’, then ‘Meta Verified’. If it’s available for your account,
+                                                you will see<b> ‘</b>Meta Verified available’ under your name and
+                                                profile photo.
+                                            </p>
+                                            <div className="_a6h9" />
+                                            <div className="_afa_" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="_a72g _8h4d _a9sg">
+                                    <div className="_a99r _9iv-">
+                                        <div className="_a6h7">
+                                            <div
+                                                className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                style={{ borderRadius: 24 }}
+                                            >
+                                                <div className="_8h4z _8h4- _a4zf">
+                                                    <img
+                                                        className="_8h4i _21op _8h4d _8h56 img"
+                                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                        alt="Payment Page"
+                                                        id="u_0_2x_mJ"
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            backgroundImage:
+                                                                'url("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/332887709_725686929102405_2876644259290443286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Mxs_8MJEpdMAX9QjJwm&_nc_ht=scontent.fhan3-2.fna&oh=00_AfBz6ogpS6hDj6K1qqxK_BdnrLBfVXkCMYkyLUJ3qhPnRg&oe=6553B00E")'
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="_a6h8" style={{}}>
+                                            <p className="_a92o _am_c _a5w7 _a5ct">Set up payment</p>
+                                            <p className="_a92o _am_d _a5w7 _a5ct">
+                                                Select your preferred payment method for your monthly payment.
+                                            </p>
+                                            <div className="_a6h9" />
+                                            <div className="_afa_" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="_a72g _8h4d _a9sg">
+                                    <div className="_a99r _9iv-">
+                                        <div className="_a6h7">
+                                            <div
+                                                className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                style={{ borderRadius: 24 }}
+                                            >
+                                                <div className="_8h4z _8h4- _a4zf">
+                                                    <img
+                                                        className="_8h4i _21op _8h4d _8h56 img"
+                                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                        alt="Proof of ID"
+                                                        id="u_0_2y_Ja"
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            backgroundImage:
+                                                                'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/330844640_504939625179889_6158973758695742191_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f537c7&_nc_ohc=pefZ0PpXW6QAX_lflrU&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDn6Pw6OXpPSXQWFT1CRUmu4nngo3SO3IZBDun3GKLbmw&oe=65525D6B")'
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="_a6h8" style={{}}>
+                                            <p className="_a92o _am_c _a5w7 _a5ct">Verify identity</p>
+                                            <p className="_a92o _am_d _a5w7 _a5ct">
+                                                Complete the verification process that requires a government ID
+                                                and, in select regions, a selfie video to confirm your identity
+                                                before being approved for a Meta Verified subscription.
+                                            </p>
+                                            <div className="_a6h9" />
+                                            <div className="_afa_" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+                {mobile == 3 &&
+                    <div
+                        aria-label="Slideshow"
+                        aria-roledescription="carousel"
+                        className="_90lg"
+                        role="group"
+                    >
+                        <div className="_a728">
+                            <div
+                                aria-live="off"
+                                className="_90lh"
+                                id="js_j7"
+                                style={{ minHeight: 600, height: "666.531px" }}
+                            >
+                                <div
+                                    aria-live="assertive"
+                                    aria-roledescription="slide"
+                                    className="_90lj"
+                                    id="js_j8"
+                                    role="presentation"
+                                    tabIndex={0}
+                                    style={{
+                                        width: "33.3333%",
+                                        transform: "translateX(0%)",
+                                        transition:
+                                            "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
+                                        opacity: 1,
+                                        visibility: "inherit"
+                                    }}
+                                >
+                                    <div className="_8h4d">
+                                        <span className="_1-qs _8h4d">
+                                            <div className="_a99r _9iv-">
+                                                <div className="_a6h7">
+                                                    <div
+                                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                        style={{ borderRadius: 24 }}
+                                                    >
+                                                        <div className="_8h4z _8h4- _a4zf">
+                                                            <img
+                                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                                alt="Verification on different platforms"
+                                                                id="u_0_2w_u3"
+                                                                style={{
+                                                                    boxSizing: "border-box",
+                                                                    backgroundImage:
+                                                                        "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="_a6h8" style={{}}>
+                                                    <p className="_a92o _am_c _a5w7 _a5ct">Select a profile</p>
+                                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                                        Go to ‘Settings’ on Instagram or Facebook. Click ‘Accounts
+                                                        Center’, then ‘Meta Verified’. If it’s available for your
+                                                        account, you will see<b> ‘</b>Meta Verified available’
+                                                        under your name and profile photo.
+                                                    </p>
+                                                    <div className="_a6h9" />
+                                                    <div className="_afa_" />
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    aria-label="2 of 3"
+                                    aria-live="off"
+                                    aria-roledescription="slide"
+                                    className="_90lj"
+                                    id="js_j9"
+                                    role="group"
+                                    tabIndex={-1}
+                                    style={{
+                                        width: "33.3333%",
+                                        transform: "translateX(100%)",
+                                        transition:
+                                            "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
+                                        opacity: 1,
+                                        visibility: "inherit"
+                                    }}
+                                >
+                                    <div className="_8h4d">
+                                        <span className="_1-qs _8h4d">
+                                            <div className="_a99r _9iv-">
+                                                <div className="_a6h7">
+                                                    <div
+                                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                        style={{ borderRadius: 24 }}
+                                                    >
+                                                        <div className="_8h4z _8h4- _a4zf">
+                                                            <img
+                                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                                alt="Payment Page"
+                                                                id="u_0_2x_30"
+                                                                style={{
+                                                                    boxSizing: "border-box",
+                                                                    backgroundImage:
+                                                                        'url("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/332887709_725686929102405_2876644259290443286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=JalXlu26XusAX-t52ol&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDounpANYq86HHZerD2vQVKZENWNuU_ptE6ZDKTiOc5cg&oe=6551B5CE")'
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="_a6h8" style={{}}>
+                                                    <p className="_a92o _am_c _a5w7 _a5ct">Set up payment</p>
+                                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                                        Select your preferred payment method for your monthly
+                                                        payment.
+                                                    </p>
+                                                    <div className="_a6h9" />
+                                                    <div className="_afa_" />
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    aria-label="3 of 3"
+                                    aria-live="off"
+                                    aria-roledescription="slide"
+                                    className="_90lj"
+                                    id="js_ja"
+                                    role="group"
+                                    tabIndex={-1}
+                                    style={{
+                                        width: "33.3333%",
+                                        transform: "translateX(200%)",
+                                        transition:
+                                            "opacity 300ms ease 0s, transform 300ms ease 0s, visibility 300ms ease 0s",
+                                        opacity: 1,
+                                        visibility: "inherit"
+                                    }}
+                                >
+                                    <div className="_8h4d">
+                                        <span className="_1-qs _8h4d">
+                                            <div className="_a99r _9iv-">
+                                                <div className="_a6h7">
+                                                    <div
+                                                        className="_a5n5 _al42 _al8o _am_h _am_j"
+                                                        style={{ borderRadius: 24 }}
+                                                    >
+                                                        <div className="_8h4z _8h4- _a4zf">
+                                                            <img
+                                                                className="_8h4i _21op _8h4d _8h56 img"
+                                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/-PAXP-deijE.gif"
+                                                                alt="Proof of ID"
+                                                                id="u_0_2y_Mb"
+                                                                style={{
+                                                                    boxSizing: "border-box",
+                                                                    backgroundImage:
+                                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/331495872_1427882078031584_21963010847847052_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=4g8QhkIcTnEAX9r1r4S&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDRD8cMpB_UWGAjUJnpJdZvnSwA6sj7hJprzap1L14MmQ&oe=6551B98F")'
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="_a6h8" style={{}}>
+                                                    <p className="_a92o _am_c _a5w7 _a5ct">Verify identity</p>
+                                                    <p className="_a92o _am_d _a5w7 _a5ct">
+                                                        Complete the verification process that requires a
+                                                        government ID and, in select regions, a selfie video to
+                                                        confirm your identity before being approved for a Meta
+                                                        Verified subscription.
+                                                    </p>
+                                                    <div className="_a6h9" />
+                                                    <div className="_afa_" />
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
                 {/* react-mount-point-unstable */}
             </div>
             <div className="_a5gf _a5gp _a5i9 _a5jm" />

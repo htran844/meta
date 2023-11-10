@@ -7,7 +7,6 @@ export default function Intro() {
     const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D")
     const [sizeimg, setimg] = useState(86)
     function checkResize() {
-        console.log("rezre", window.screen.width)
         if (window.screen.width >= 1024) {
             setimg(86)
             setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
@@ -15,6 +14,7 @@ export default function Intro() {
             setimg(49)
             setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC8c83bfPdhZuA6qMksQwsV1r4oLHUEe7eOnDmGeSFvxg&oe=65517A62)")
         } else {
+            setimg(49)
             setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
         }
     }
@@ -26,6 +26,7 @@ export default function Intro() {
             setimg(49)
             setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCwdm7KPyxoda6yKrgystyTrC-KCY0pbjfMCs6ZE9O5mg&oe=655374A2)")
         } else {
+            setimg(49)
             setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
         }
     }, [])

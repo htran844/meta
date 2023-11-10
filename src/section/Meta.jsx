@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react';
 
 export default function Meta() {
+    window.addEventListener('resize', checkResize);
+    const [mobile, setMobile] = useState("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/375461586_798386795402602_1441352938252638556_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=_AQ6RILEpIcAX_oFS9P&_nc_ht=scontent.fhan3-2.fna&oh=00_AfD6yLweajVgdz88fdQKq6qRR1x4QXZMn2TnDjxmGGS9aA&oe=65527650")
+    function checkResize() {
+        if (window.screen.width <= 767) {
+            // console.log("img", window.screen.width)
+            setMobile("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/375461586_798386795402602_1441352938252638556_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=_AQ6RILEpIcAX_oFS9P&_nc_ht=scontent.fhan3-2.fna&oh=00_AfD6yLweajVgdz88fdQKq6qRR1x4QXZMn2TnDjxmGGS9aA&oe=65527650")
+        } else{
+            setMobile("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375460548_799839762141647_1597284371761013731_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=v6nmSeIVLNEAX8l5YqU&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCl-M3cd3XujTiwCvJcl35fbSXrVpCbFjI4tLt-CQIRmQ&oe=6551A3BE")
+        }
+    }
+    useEffect(()=>{
+        checkResize()
+    }, [])
     return (
         <div className="_a5x4">
             <div className="_8h4z _8h4- _a4zf" style={{ boxSizing: "border-box" }}>
@@ -51,7 +65,7 @@ export default function Meta() {
                             <div className="_8h4z _8h4- _a4zf">
                                 <img
                                     className="_21op _1-qs _9mk0 img"
-                                    src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375460548_799839762141647_1597284371761013731_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=v6nmSeIVLNEAX8l5YqU&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCl-M3cd3XujTiwCvJcl35fbSXrVpCbFjI4tLt-CQIRmQ&oe=6551A3BE"
+                                    src={mobile}
                                     alt=""
                                     id="u_0_10_8u"
                                     style={{ boxSizing: "border-box" }}
