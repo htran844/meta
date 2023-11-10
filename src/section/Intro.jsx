@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import React, { useEffect, useState } from 'react'
 
 export default function Intro() {
     window.addEventListener('resize', checkResize);
-    const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
+    const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D")
     const [sizeimg, setimg] = useState(86)
     function checkResize() {
         console.log("rezre", window.screen.width)
@@ -13,9 +15,24 @@ export default function Intro() {
             setimg(49)
             setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC8c83bfPdhZuA6qMksQwsV1r4oLHUEe7eOnDmGeSFvxg&oe=65517A62)")
         } else {
-            setUrl("url(https://scontent.fhan14-1.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX9FkYYL&_nc_ht=scontent.fhan14-1.fna&oh=00_AfA5liA0PvTZmB9oH7GkBWZMlzbJw8N1069ocAynDBZmCw&oe=655133C0)")
+            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
         }
     }
+    useEffect(()=>{
+        if (window.screen.width >= 1024) {
+            setimg(86)
+            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
+        } else if (window.screen.width >= 768) {
+            setimg(49)
+            setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCwdm7KPyxoda6yKrgystyTrC-KCY0pbjfMCs6ZE9O5mg&oe=655374A2)")
+        } else {
+            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
+        }
+    }, [])
+
+    useEffect(()=>{
+        Aos.init();
+    },[])
 
     return (
         <div className="_a5x4">
@@ -42,6 +59,7 @@ export default function Intro() {
                 <div
                     data-scoped-css="fullscreen-hero-scoped-u_0_7_R7"
                     className="_a69i _aoby _ao-r"
+                    // data-aos="slide-up"
                 >
                     <div
                         className="_a62m _a63- _a62r _a641 _aizo _9r-x _9bc-"

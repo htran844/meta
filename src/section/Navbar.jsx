@@ -1120,6 +1120,7 @@ export default function Navbar() {
                         role="button"
                         style={{ marginTop: 0 }}
                         onClick={() => changeMenu(0)}
+                        onMouseEnter={() => changeMenu(0)}
                     />
 
                 }
@@ -1153,6 +1154,7 @@ export default function Navbar() {
                                     target="_self"
                                     href="#"
                                     onClick={() => changeMenu(1)}
+                                    onMouseEnter={()=>changeMenu(1)}
                                 >
                                     Who we are
                                     <span className="_afd6" />
@@ -1249,6 +1251,7 @@ export default function Navbar() {
                                     target="_self"
                                     href="#"
                                     onClick={() => changeMenu(2)}
+                                    onMouseEnter={()=>changeMenu(2)}
                                 >
                                     Our technologies
                                     <span className="_afd6" />
@@ -1513,6 +1516,7 @@ export default function Navbar() {
                                     target="_self"
                                     href="#"
                                     onClick={() => changeMenu(3)}
+                                    onMouseEnter={()=>changeMenu(3)}
                                 >
                                     Meta and you
                                     <span className="_afd6" />
@@ -1616,6 +1620,7 @@ export default function Navbar() {
                                     target="_self"
                                     href="#"
                                     onClick={() => changeMenu(4)}
+                                    onMouseEnter={()=>changeMenu(4)}
                                 >
                                     Support
                                     <span className="_afd6" />
