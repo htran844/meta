@@ -18,7 +18,7 @@ export default function Footer() {
                     >
                         <img
                             className="_8h4h img"
-                            src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/250802775_421829349379303_5128561417639041188_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=xoOhZpqZklgAX_KnHuE&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC7SzsqtP1BYVdl1cPKEtMTNNQRYDJWCBTEvEnTCIpVig&oe=6552C2F9"
+                            src="../../public/ezgif.com-gif-maker.png"
                             height={17}
                             width={87}
                             alt="Meta logo, homepage link"
@@ -45,7 +45,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/275949698_3248957128655833_369430323747988984_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=n1Uy0yiIxO8AX_-feb-&_nc_ht=scontent.fhan3-1.fna&oh=00_AfD3aXpk4waMf0f2VfN7YR151NryY9NyqUj3rbFPMYz6ww&oe=655218EE"
+                                        src="../../public/fb.png"
                                         height={24}
                                         width={24}
                                         alt="facebook icon"
@@ -69,7 +69,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/276079790_239645664974434_7595452976573962628_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=or4Pq2OCxdAAX_82XMm&_nc_ht=scontent.fhan3-1.fna&oh=00_AfB6mQQOa2efwWhZbs1eQRDUMPKGy-x0oVP27bGPQT81eA&oe=655344F1"
+                                        src="../../public/in.png"
                                         height={24}
                                         width={24}
                                         alt="Instagram icon"
@@ -92,7 +92,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375968976_3592877074321286_1710176348628188216_n.png?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=5LsudYZo6xsAX_plOic&_nc_ht=scontent.fhan3-1.fna&oh=00_AfAbsRe40oTMy0Gs_xh2ZrXjr4rkQ4ABkktmXGI0AdLMcg&oe=65532788"
+                                        src="../../public/a.png"
                                         height={24}
                                         width={24}
                                         alt="Threads icon"
@@ -116,7 +116,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/276008099_472069827986519_2757774944745661943_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=YFfTVIlbi7UAX8T7VwU&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDcQFaRSJKjHG52H8vL4mnp6VcPb_mOVMBr3DITgJlL5Q&oe=655348E5"
+                                        src="../../public/yt.png"
                                         height={24}
                                         width={24}
                                         alt="YouTube icon"
@@ -140,7 +140,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/275966733_5367624433282777_4220713818439775162_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=IKdBvs2s200AX-2_5jf&_nc_oc=AQnPXiu76d7ZJ64B1NkB-WeIawN1X3jVlh7-mWY-_POyB-yFznYWNqmsdK3hmO9QfXrTzFYx-pe3Nb0GQpkXNbbO&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA2oubH5Qy-xMQ86P7ZVT4EgShiWMsizpKHFfn1_KQaBg&oe=65533AA3"
+                                        src="../../public/tw.png"
                                         height={24}
                                         width={24}
                                         alt="Twitter icon"
@@ -164,7 +164,7 @@ export default function Footer() {
                                 >
                                     <img
                                         className="_8h4h img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/275775241_706660317361134_8955597739986331891_n.png?_nc_cat=1&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Hm8T52QE2qIAX-vkNqw&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDbeZPNMME8QUC9SlASxIagRrsN-5mJlga9YWNz0IiWmw&oe=6552E102"
+                                        src="../../public/linkedin.png"
                                         height={24}
                                         width={24}
                                         alt="LinkedIn icon"

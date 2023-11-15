@@ -108,7 +108,7 @@ export default function GetStarted() {
                                                 style={{
                                                     boxSizing: "border-box",
                                                     backgroundImage:
-                                                        "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
+                                                        "url(../../public/metave.jpg)"
                                                 }}
                                             />
                                         </div>
@@ -142,7 +142,7 @@ export default function GetStarted() {
                                                 style={{
                                                     boxSizing: "border-box",
                                                     backgroundImage:
-                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/332703085_873785203923711_9121059145098090429_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Q0DMYenUQAMAX8Uc1Qx&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA9HtAsuBz_XW_aQKDwHwhCpKD-Lynlr0U43hPR9WnEFg&oe=6551EE01")'
+                                                    "url(../../public/setup.jpg)"
                                                 }}
                                             />
                                         </div>
@@ -174,8 +174,7 @@ export default function GetStarted() {
                                                 style={{
                                                     boxSizing: "border-box",
                                                     backgroundImage:
-                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/331514961_3667225920166187_1767461297123902599_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X07UPLEdts8AX9urdp8&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA8oCb2LSi6PVXCxQmxGDXs4k7AXf_jXRXaewfR4CP2gw&oe=6552918C")'
-                                                }}
+                                                    "url(../../public/take.jpg)"                                                }}
                                             />
                                         </div>
                                     </div>
@@ -234,8 +233,7 @@ export default function GetStarted() {
                                                         style={{
                                                             boxSizing: "border-box",
                                                             backgroundImage:
-                                                                "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
-                                                        }}
+                                                            "url(../../public/metave.jpg)"                                                        }}
                                                     />
                                                 </div>
                                             </div>
@@ -269,8 +267,7 @@ export default function GetStarted() {
                                                         style={{
                                                             boxSizing: "border-box",
                                                             backgroundImage:
-                                                                'url("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/332887709_725686929102405_2876644259290443286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=Mxs_8MJEpdMAX9QjJwm&_nc_ht=scontent.fhan3-2.fna&oh=00_AfBz6ogpS6hDj6K1qqxK_BdnrLBfVXkCMYkyLUJ3qhPnRg&oe=6553B00E")'
-                                                        }}
+                                                            "url(../../public/setup.jpg)"                                                        }}
                                                     />
                                                 </div>
                                             </div>
@@ -301,8 +298,7 @@ export default function GetStarted() {
                                                         style={{
                                                             boxSizing: "border-box",
                                                             backgroundImage:
-                                                                'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/330844640_504939625179889_6158973758695742191_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f537c7&_nc_ohc=pefZ0PpXW6QAX_lflrU&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDn6Pw6OXpPSXQWFT1CRUmu4nngo3SO3IZBDun3GKLbmw&oe=65525D6B")'
-                                                        }}
+                                                            "url(../../public/take.jpg)"                                                        }}
                                                     />
                                                 </div>
                                             </div>
@@ -372,8 +368,7 @@ export default function GetStarted() {
                                                                 style={{
                                                                     boxSizing: "border-box",
                                                                     backgroundImage:
-                                                                        "url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/375575474_606297904910140_6485162814419347093_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=6-BQyAhnMn0AX_0mm-n&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCXn4CCo_57IFTygIB5zsiOQvAaRrrAslTeU93MvgtGlA&oe=65535199)"
-                                                                }}
+                                                                    "url(../../public/metave.jpg)"                                                                }}
                                                             />
                                                         </div>
                                                     </div>
@@ -427,8 +422,7 @@ export default function GetStarted() {
                                                                 style={{
                                                                     boxSizing: "border-box",
                                                                     backgroundImage:
-                                                                        'url("https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/332887709_725686929102405_2876644259290443286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=JalXlu26XusAX-t52ol&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDounpANYq86HHZerD2vQVKZENWNuU_ptE6ZDKTiOc5cg&oe=6551B5CE")'
-                                                                }}
+                                                                    "url(../../public/setup.jpg)"                                                                }}
                                                             />
                                                         </div>
                                                     </div>
@@ -480,8 +474,7 @@ export default function GetStarted() {
                                                                 style={{
                                                                     boxSizing: "border-box",
                                                                     backgroundImage:
-                                                                        'url("https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/331495872_1427882078031584_21963010847847052_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=4g8QhkIcTnEAX9r1r4S&_nc_ht=scontent.fhan3-1.fna&oh=00_AfDRD8cMpB_UWGAjUJnpJdZvnSwA6sj7hJprzap1L14MmQ&oe=6551B98F")'
-                                                                }}
+                                                                    "url(../../public/take.jpg)"                                                                }}
                                                             />
                                                         </div>
                                                     </div>

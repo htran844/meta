@@ -37,7 +37,7 @@ export default function NewRoom() {
                             <div className="_8h4z _8h4- _a4zf">
                                 <img
                                     className="_21op _1-qs _9mk0 img"
-                                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/330607308_722249212784707_8819185502188971301_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=lq-9ng0f7SMAX8_Vxge&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDnk7ASGR48EjZaw_2hVK6hnqkefFBdfoyAwI09-FGksw&oe=65524DF8"
+                                    src="../../public/nammicro.jpg"
                                     alt="Person with microphone in front"
                                     id="u_0_1n_7X"
                                     style={{ boxSizing: "border-box" }}

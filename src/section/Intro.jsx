@@ -5,31 +5,31 @@ import React, { useEffect, useState } from 'react'
 export default function Intro() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     window.addEventListener('resize', checkResize);
-    const [urlback, setUrl] = useState("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D")
+    const [urlback, setUrl] = useState("url(../../public/background1.jpg)")
     const [sizeimg, setimg] = useState(86)
     function checkResize() {
         console.log("intro", window.innerWidth)
         if (window.innerWidth >= 1024) {
             setimg(86)
-            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
+            setUrl("url(../../public/background1.jpg)")
         } else if (window.innerWidth >= 768) {
             setimg(49)
-            setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC8c83bfPdhZuA6qMksQwsV1r4oLHUEe7eOnDmGeSFvxg&oe=65517A62)")
+            setUrl("url(../../public/background2.jpg)")
         } else {
             setimg(49)
-            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
+            setUrl("url(../../public/background3.jpg)")
         }
     }
     useEffect(()=>{
         if (window.innerWidth >= 1024) {
             setimg(86)
-            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/376751083_834914768201822_6874666537252247736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f537c7&_nc_ohc=jLptaRbDmGkAX_Ta0MM&_nc_ht=scontent.fhan3-2.fna&oh=00_AfDOeUxd0EVtNxsreD9xbJ7Q6JnVWPYPyUfwhVRQDl4mYQ&oe=6552027D)")
+            setUrl("url(../../public/background1.jpg)")
         } else if (window.innerWidth >= 768) {
             setimg(49)
-            setUrl("url(https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/333063949_526547116208049_8920338120809819840_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=DgY7cqWbrAYAX_fG7hT&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCwdm7KPyxoda6yKrgystyTrC-KCY0pbjfMCs6ZE9O5mg&oe=655374A2)")
+            setUrl("url(../../public/background2.jpg)")
         } else {
             setimg(49)
-            setUrl("url(https://scontent.fhan3-2.fna.fbcdn.net/v/t39.8562-6/337354606_746529453682598_4255232545954343113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=X4BbaoBANJUAX-Dc5i0&_nc_ht=scontent.fhan3-2.fna&oh=00_AfAlETNstL7RQzigywIGpIQLNNOgWIPL9caIDav_KnJesw&oe=65532E00)")
+            setUrl("url(../../public/background3.jpg)")
         }
     }, [])
 
@@ -71,7 +71,7 @@ export default function Intro() {
                     >
                         <img
                             className="_8h4h img"
-                            src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.8562-6/375593064_778731280602001_6601361369208148137_n.png?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=hxx06rW57WEAX9HHd38&_nc_oc=AQnXTJyUBdcj9mHbw62PsX4CMPeze3jKEu50husu8OC4ObekRD51vH_xF12c_r2pY5UB-_dHwKuFjyIcoAarVm7O&_nc_ht=scontent.fhan14-2.fna&oh=00_AfAr-bOC2NDXXGayjH2-gfHIGppMWdgEnuclhKTs5T39JQ&oe=6551DE8B"
+                            src="../../public/verify.png"
                             height={49}
                             width={49}
                             alt="Verification Badge Icon"

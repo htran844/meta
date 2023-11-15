@@ -137,7 +137,7 @@ export default function Navbar() {
                                 >
                                     <img
                                         className="_afd2 img"
-                                        src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=Pnji0z9IPgIAX8ab95G&_nc_ht=scontent.fhan3-1.fna&oh=00_AfA5zc4gmB6KMWWmbNmjCZnHqUs5kmNxrAqVH-Pcdbf4eA&oe=6551AAB9"
+                                        src={"../../public/ezgif.com-gif-maker.png"}
                                         width={89}
                                         height={18}
                                         alt="Meta logo, back to home"
@@ -1077,7 +1077,7 @@ export default function Navbar() {
                         >
                             <img
                                 className="_afd2 img"
-                                src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=Pnji0z9IPgIAX-CxL-o&_nc_ht=scontent.fhan14-4.fna&oh=00_AfBiFHmBhsBW_wj9V2AjyMDQERlIvT0seEJMuGpiUSqbSg&oe=6551AAB9"
+                                src={"../../public/ezgif.com-gif-maker.png"}
                                 width={89}
                                 height={18}
                                 alt="Meta logo, back to home"
@@ -1137,7 +1137,7 @@ export default function Navbar() {
                                 >
                                     <img
                                         className="_afd2 img"
-                                        src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=Pnji0z9IPgIAX-CxL-o&_nc_ht=scontent.fhan14-4.fna&oh=00_AfBiFHmBhsBW_wj9V2AjyMDQERlIvT0seEJMuGpiUSqbSg&oe=6551AAB9"
+                                        src={"../../public/ezgif.com-gif-maker.png"}
                                         width={89}
                                         height={18}
                                         alt="Meta logo, back to home"

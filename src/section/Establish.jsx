@@ -66,7 +66,7 @@ export default function Establish() {
                                             style={{
                                                 boxSizing: "border-box",
                                                 backgroundImage:
-                                                    "url(https://scontent.fhan14-2.fna.fbcdn.net/v/t39.8562-6/330203970_6761919260490190_6261466426391612772_n.png?_nc_cat=100&ccb=1-7&_nc_sid=f537c7&_nc_ohc=VdaR89ROm5wAX8kFAx4&_nc_ht=scontent.fhan14-2.fna&oh=00_AfBM58WdyxA4PTJ3Vv37Lp9jiOFiZRs-8YzV2UCo0_gNPg&oe=65523457)"
+                                                    "url(../../public/tick.png"
                                             }}
                                         />
                                     </div>
@@ -99,7 +99,7 @@ export default function Establish() {
                                             style={{
                                                 boxSizing: "border-box",
                                                 backgroundImage:
-                                                    "url(https://scontent.fhan14-1.fna.fbcdn.net/v/t39.8562-6/331125185_609417210977459_479472656349659517_n.png?_nc_cat=105&ccb=1-7&_nc_sid=f537c7&_nc_ohc=vYX0xHEtPF4AX-PgxoE&_nc_ht=scontent.fhan14-1.fna&oh=00_AfDuBfsfJqbPSJoh0nyKnLUWDMA4W0jnIO-Au54zzZ36pw&oe=65524C64)"
+                                                "url(../../public/khoa.png"
                                             }}
                                         />
                                     </div>
@@ -131,7 +131,7 @@ export default function Establish() {
                                             style={{
                                                 boxSizing: "border-box",
                                                 backgroundImage:
-                                                    "url(https://scontent.fhan14-1.fna.fbcdn.net/v/t39.8562-6/330181560_1327393474499821_8913489304933215620_n.png?_nc_cat=107&ccb=1-7&_nc_sid=f537c7&_nc_ohc=O38PGUtyHyAAX920C5Z&_nc_ht=scontent.fhan14-1.fna&oh=00_AfAnKaoMleEdlhVKn7YdDMjKWHaz4MoFgAdDJHNjOHY21A&oe=6551AFDB)"
+                                                "url(../../public/but.png"
                                             }}
                                         />
                                     </div>
@@ -163,7 +163,7 @@ export default function Establish() {
                                             style={{
                                                 boxSizing: "border-box",
                                                 backgroundImage:
-                                                    "url(https://scontent.fhan14-2.fna.fbcdn.net/v/t39.8562-6/329654270_871102530673488_118573377278585110_n.png?_nc_cat=100&ccb=1-7&_nc_sid=f537c7&_nc_ohc=G54_m516sHAAX9zw4KN&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCuBXZ3LSg_j_0DC9Vm65VRORtHuzz5lNg4-YX4dXKj_A&oe=65516245)"
+                                                "url(../../public/mess.png"
                                             }}
                                         />
                                     </div>
